@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>征途 · 二万五千里｜1934—1936</title>
+<meta name="description" content="纪念中国工农红军长征胜利90周年。以河北省图书馆·燕赵红色记忆馆「铁流·丰碑」主题文献展的展品为线索，从于都河到会宁城，重走二万五千里。AI 辅助创作。">
+<meta name="author" content="新闻传播综合实训 · 主题报道专题">
+<meta name="theme-color" content="#0b0908">
+<meta property="og:type" content="article">
+<meta property="og:title" content="征途 · 二万五千里｜1934—1936">
+<meta property="og:description" content="九十年后，我们在一间展厅里重走那条路。">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0908'/%3E%3Cpath d='M6 6h20v4H10v6h12v4H10v6h16v4H6z' fill='%23c0342b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0908;
+  --bg-2:#100d0b;
+  --panel:#141110;
+  --fg:#f2e9dc;
+  --dim:rgba(242,233,220,.60);
+  --faint:rgba(242,233,220,.34);
+  --line:rgba(242,233,220,.14);
+  --red:#c0342b;
+  --red-soft:rgba(192,52,43,.16);
+  --gold:#d8ab55;
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC","SimSun",serif;
+  --sans:-apple-system,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  --mono:"SF Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+  --gutter:22px;
+  --measure:38rem;
+  --fs-body:16px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:var(--sans);font-size:var(--fs-body);line-height:1.9;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+p{margin:0 0 1.45em}
+::selection{background:var(--red);color:#fff}
+
+/* ---------- 进度条 ---------- */
+.progress{
+  position:fixed;top:0;left:0;height:2px;width:0;z-index:60;
+  background:linear-gradient(90deg,var(--red),var(--gold));
+  transition:width .12s linear;
+}
+
+/* ---------- 封面 ---------- */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:flex-end;
+  padding:0 var(--gutter) calc(34px + env(safe-area-inset-bottom));
+  overflow:hidden;isolation:isolate;
+}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{
+  width:100%;height:112%;object-fit:cover;object-position:50% 26%;
+  filter:grayscale(.55) contrast(1.04) brightness(.62);
+  will-change:transform;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(11,9,8,.86) 0%,rgba(11,9,8,.28) 30%,rgba(11,9,8,.62) 62%,rgba(11,9,8,.97) 100%),
+    radial-gradient(120% 80% at 50% 90%,rgba(192,52,43,.16),transparent 70%);
+}
+.hero-inner{position:relative;width:100%;max-width:var(--measure)}
+.kicker{
+  display:flex;align-items:center;gap:10px;margin:0 0 18px;
+  font-size:11px;letter-spacing:.28em;color:rgba(242,233,220,.72);
+}
+.kicker i{width:26px;height:1px;background:var(--red);display:block}
+.hero h1{
+  margin:0;font-family:var(--serif);font-weight:400;
+  font-size:clamp(56px,17vw,96px);line-height:1.02;letter-spacing:.06em;
+  text-shadow:0 2px 30px rgba(0,0,0,.55);
+}
+.hero .en{
+  display:block;margin:14px 0 0;font-size:10px;letter-spacing:.55em;
+  color:rgba(242,233,220,.66);text-indent:.2em;
+}
+.hero .lede{
+  margin:26px 0 0;font-family:var(--serif);
+  font-size:clamp(17px,4.8vw,21px);line-height:1.85;letter-spacing:.02em;
+  color:rgba(242,233,220,.94);
+}
+.hero .lede span{display:block;color:rgba(242,233,220,.72)}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:8px 18px;margin:30px 0 0;padding:14px 0 0;
+  border-top:1px solid rgba(242,233,220,.18);
+  font-size:11.5px;letter-spacing:.1em;color:rgba(242,233,220,.62);
+}
+.hero-meta b{font-weight:400;color:var(--gold)}
+.scroll-hint{
+  display:flex;align-items:center;gap:10px;margin-top:24px;
+  font-size:10px;letter-spacing:.3em;color:rgba(242,233,220,.55);
+}
+.scroll-hint i{width:32px;height:1px;background:linear-gradient(90deg,rgba(242,233,220,.5),transparent);display:block}
+.scroll-hint em{font-style:normal;animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:.9}}
+
+/* ---------- 通用版心 ---------- */
+main{display:block}
+section{position:relative}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 var(--gutter)}
+.tight{padding:44px 0 40px}
+.chapter{padding:76px 0 34px}
+.end{padding:70px 0 56px}
+
+/* ---------- 章节头 ---------- */
+.ch-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 14px;margin-bottom:6px}
+.ch-head .no{
+  order:1;font-family:var(--serif);font-size:38px;line-height:1;letter-spacing:.02em;
+  color:transparent;-webkit-text-stroke:1px rgba(242,233,220,.30);user-select:none;
+}
+.ch-head .en{order:2;font-size:10.5px;letter-spacing:.32em;color:var(--red)}
+.ch-head h2{
+  order:3;flex:0 0 100%;margin:14px 0 0;
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(23px,6.2vw,30px);line-height:1.4;letter-spacing:.02em;max-width:100%;overflow-wrap:anywhere;
+}
+.dateline{
+  display:inline-flex;align-items:center;gap:8px;margin:0 0 20px;
+  font-size:11px;letter-spacing:.2em;color:var(--gold);
+}
+.dateline::before{content:"";width:14px;height:1px;background:var(--gold);opacity:.7}
+
+/* ---------- 正文 ---------- */
+.lede-drop::first-letter{
+  float:left;font-family:var(--serif);font-size:3.05em;line-height:.92;
+  margin:.06em .16em 0 0;color:var(--fg);
+}
+p{color:rgba(242,233,220,.88)}
+p em{font-style:normal;color:#fff;border-bottom:1px solid var(--red);padding-bottom:1px}
+p strong{font-weight:500;color:#fff}
+sup.ref{
+  font-size:.62em;color:var(--red);vertical-align:super;
+  margin-left:.1em;letter-spacing:.02em;
+}
+
+/* ---------- 图片 ---------- */
+figure{margin:34px 0}
+figure.bleed{margin:34px 0;max-width:100%}
+figure.bleed img{
+  width:100%;height:auto;max-height:88svh;object-fit:cover;
+  background:var(--bg-2);
+}
+figcaption{
+  margin:12px var(--gutter) 0;font-size:12px;line-height:1.75;
+  color:var(--dim);letter-spacing:.01em;
+}
+figure.bleed figcaption{max-width:var(--measure);margin:12px auto 0;padding:0 var(--gutter)}
+figure .tag{
+  display:inline-block;margin-right:8px;padding:1px 7px;
+  border:1px solid var(--line);border-radius:2px;
+  font-size:10px;letter-spacing:.12em;color:var(--gold);vertical-align:1px;
+}
+figure.frame{margin:34px var(--gutter);padding:10px;background:var(--panel);border:1px solid var(--line)}
+figure.frame figcaption{margin:10px 2px 2px;padding:0}
+
+/* ---------- 引语 ---------- */
+.pull{
+  margin:38px 0;padding:4px 0 4px 22px;border-left:2px solid var(--red);
+  font-family:var(--serif);font-size:clamp(19px,5.2vw,23px);line-height:1.75;
+  color:rgba(242,233,220,.95);
+}
+.pull p{margin:0;color:inherit}
+.pull .from{display:block;margin-top:14px;font-family:var(--sans);font-size:11.5px;letter-spacing:.16em;color:var(--faint)}
+
+/* ---------- 数据 ---------- */
+.stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:34px 0 10px;
+  background:var(--line);border:1px solid var(--line);
+}
+.stat{background:var(--bg);padding:20px 16px 18px}
+.stat .v{font-family:var(--serif);font-size:clamp(29px,8.4vw,38px);line-height:1.1}
+.stat .v small{font-size:.44em;margin-left:2px;color:var(--red);letter-spacing:.02em}
+.stat .v.txt{font-size:clamp(21px,6.2vw,27px);letter-spacing:.04em;white-space:nowrap}
+.stat .k{margin-top:6px;font-size:11.5px;color:var(--dim);line-height:1.5}
+.note-line{margin:0 0 30px;font-size:11px;color:var(--faint);line-height:1.6}
+
+/* ---------- 时间线 ---------- */
+.tl{position:relative;margin:30px 0 6px;padding-left:22px;list-style:none}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.tl li{position:relative;padding:0 0 24px}
+.tl li::before{
+  content:"";position:absolute;left:-21px;top:9px;width:9px;height:9px;
+  border-radius:50%;background:var(--bg);border:1px solid var(--faint);
+}
+.tl li.key::before{background:var(--red);border-color:var(--red);box-shadow:0 0 0 3px var(--red-soft)}
+.tl .d{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--gold)}
+.tl .t{display:block;margin-top:4px;font-size:14.5px;line-height:1.7;color:rgba(242,233,220,.85)}
+
+/* ---------- 资料框 ---------- */
+.factbox{
+  margin:32px 0;padding:20px 20px 18px 22px;background:var(--panel);
+  border-left:2px solid var(--red);
+}
+.factbox h4{
+  margin:0 0 12px;font-family:var(--sans);font-weight:400;
+  font-size:11px;letter-spacing:.16em;color:var(--red);
+}
+.factbox ul{margin:0;padding:0;list-style:none}
+.factbox li{
+  position:relative;padding:0 0 10px 16px;font-size:14px;line-height:1.8;
+  color:rgba(242,233,220,.84);
+}
+.factbox li::before{content:"";position:absolute;left:0;top:.85em;width:8px;height:1px;background:var(--red);opacity:.75}
+.factbox li:last-child{padding-bottom:0}
+.factbox b{font-weight:500;color:#fff}
+
+/* ---------- 横滑档案 ---------- */
+.gallery{
+  display:flex;gap:14px;overflow-x:auto;overscroll-behavior-x:contain;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  padding:2px var(--gutter) 8px;scrollbar-width:none;
+  scroll-padding-inline:var(--gutter);
+}
+.gallery::-webkit-scrollbar{display:none}
+.card{
+  flex:0 0 76%;max-width:300px;scroll-snap-align:start;
+  display:flex;flex-direction:column;
+}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line)}
+.card .cap{margin-top:10px}
+.card .cap b{display:block;font-size:13px;font-weight:400;color:rgba(242,233,220,.92)}
+.card .cap span{
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;
+  margin-top:5px;font-size:11.5px;line-height:1.7;color:var(--dim);
+}
+.gallery-wrap{position:relative}
+.gnav{
+  position:absolute;top:38%;z-index:4;width:38px;height:38px;border-radius:50%;
+  display:none;place-items:center;cursor:pointer;
+  border:1px solid var(--line);background:rgba(11,9,8,.86);color:var(--fg);
+  font-size:15px;line-height:1;backdrop-filter:blur(6px);
+}
+.gnav.prev{left:6px}
+.gnav.next{right:6px}
+.gnav:disabled{opacity:.28;cursor:default}
+.gallery-hint{
+  display:flex;justify-content:flex-end;align-items:center;gap:8px;
+  margin:2px var(--gutter) 0;font-size:10.5px;letter-spacing:.18em;color:var(--faint);
+}
+.dots{display:flex;justify-content:center;gap:7px;margin:16px 0 0}
+.dots i{width:5px;height:5px;border-radius:50%;background:rgba(242,233,220,.22);transition:.25s var(--ease)}
+.dots i.on{background:var(--red);width:16px;border-radius:3px}
+
+/* ---------- 人物/物件卡 ---------- */
+.bio{margin:34px 0;padding:20px 20px 6px;border:1px solid var(--line);background:var(--bg-2)}
+.bio h4{margin:0 0 2px;font-family:var(--serif);font-weight:400;font-size:18px;letter-spacing:.04em}
+.bio .role{margin:0 0 16px;font-size:10.5px;letter-spacing:.22em;color:var(--red)}
+.bio dl{display:grid;grid-template-columns:74px 1fr;gap:12px 14px;margin:0 0 16px}
+.bio dt{font-family:var(--mono);font-size:11.5px;color:var(--gold);padding-top:3px}
+.bio dd{margin:0;font-size:13.5px;line-height:1.7;color:rgba(242,233,220,.84)}
+
+/* ---------- 注释与来源 ---------- */
+.notes{margin:56px 0 0;padding-top:22px;border-top:1px solid var(--line)}
+.notes h3,.sources h3{
+  margin:0 0 16px;font-family:var(--sans);font-weight:400;
+  font-size:10.5px;letter-spacing:.3em;color:var(--red);
+}
+.notes ol{margin:0;padding:0 0 0 1.5em;font-size:12.5px;line-height:1.85;color:var(--dim)}
+.notes li{margin-bottom:8px}
+.notes em{font-style:normal;color:rgba(242,233,220,.8)}
+.sources{margin:34px 0 0;padding-top:22px;border-top:1px solid var(--line)}
+.sources ul{margin:0;padding:0;list-style:none;font-size:12.5px;line-height:1.9;color:var(--dim)}
+.sources li{padding:0 0 6px 1.4em;position:relative}
+.sources li::before{content:"·";position:absolute;left:.3em;color:var(--red)}
+.ai-badge{
+  display:inline-flex;align-items:center;gap:8px;margin:26px 0 0;
+  padding:7px 12px;border:1px solid var(--line);border-radius:2px;
+  font-size:11px;letter-spacing:.12em;color:var(--dim);
+}
+.ai-badge b{color:var(--gold);font-weight:400}
+
+/* ---------- 结语 ---------- */
+.end .glyph{
+  display:block;margin:0 auto 26px;width:min(38vw,150px);aspect-ratio:1;
+  font-family:var(--serif);font-size:min(30vw,118px);line-height:1;
+  text-align:center;color:transparent;-webkit-text-stroke:1px rgba(242,233,220,.30);
+  user-select:none;
+}
+.end p{font-family:var(--serif);font-size:clamp(17px,4.5vw,19px);line-height:1.95;color:rgba(242,233,220,.92)}
+.end .sign{display:block;margin-top:26px;text-align:center;font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;color:var(--faint)}
+
+/* ---------- 页脚 ---------- */
+footer{
+  padding:34px var(--gutter) calc(40px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--line);font-size:11px;line-height:1.9;color:var(--faint);
+}
+footer .fgrid{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:var(--measure);margin:0 auto}
+footer .fgrid b{font-weight:400;color:var(--dim);letter-spacing:.16em}
+
+/* ---------- 悬浮控件 ---------- */
+.chip{
+  position:fixed;top:calc(14px + env(safe-area-inset-top));right:14px;z-index:40;
+  display:flex;align-items:center;gap:6px;padding:6px 11px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:rgba(242,233,220,.8);
+  background:rgba(11,9,8,.62);border:1px solid var(--line);border-radius:999px;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  opacity:0;transform:translateY(-6px);pointer-events:none;transition:.35s var(--ease);
+}
+.chip.on{opacity:1;transform:none}
+.fabs.hide{opacity:0;transform:translateY(10px);pointer-events:none}
+.fabs{transition:opacity .3s var(--ease),transform .3s var(--ease);
+
+  position:fixed;right:14px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:45;
+  display:flex;flex-direction:column;gap:10px;
+}
+.fab{
+  width:44px;height:44px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
+  border:1px solid var(--line);background:rgba(11,9,8,.66);color:var(--fg);
+  font-size:12px;letter-spacing:0;backdrop-filter:blur(10px);
+  transition:.25s var(--ease);
+}
+.fab:hover{border-color:rgba(192,52,43,.7)}
+.fab:active{transform:scale(.94)}
+.fab svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.4}
+
+/* ---------- 目录抽屉 ---------- */
+.toc{
+  position:fixed;inset:0;z-index:70;display:flex;justify-content:flex-end;
+  background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:.3s var(--ease);
+  backdrop-filter:blur(2px);
+}
+.toc.on{opacity:1;pointer-events:auto}
+.toc-panel{
+  width:min(340px,86vw);height:100%;overflow:auto;padding:26px 22px 34px;
+  background:var(--bg-2);border-left:1px solid var(--line);
+  transform:translateX(18px);transition:.34s var(--ease);
+}
+.toc.on .toc-panel{transform:none}
+.toc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.toc-head span{font-size:10.5px;letter-spacing:.3em;color:var(--red)}
+.toc-close{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--fg);cursor:pointer;font-size:15px;line-height:1}
+.toc-list{list-style:none;margin:0;padding:0}
+.toc-list li{border-top:1px solid var(--line)}
+.toc-list button{
+  display:block;width:100%;padding:14px 2px;text-align:left;cursor:pointer;
+  background:none;border:0;color:rgba(242,233,220,.7);font-family:inherit;font-size:15px;
+  transition:.2s;
+}
+.toc-list button:hover{color:#fff}
+.toc-list .row{display:flex;align-items:baseline;gap:12px}
+.toc-list .n{font-family:var(--mono);font-size:11px;color:var(--faint);min-width:22px}
+.toc-list .e{display:block;margin-top:3px;font-size:9.5px;letter-spacing:.22em;color:var(--faint)}
+.toc-list li.cur button{color:var(--red)}
+.toc-list li.cur .n{color:var(--red)}
+.toc-tools{display:flex;gap:10px;margin-top:26px}
+.tool{
+  flex:1;padding:11px 12px;cursor:pointer;text-align:center;
+  border:1px solid var(--line);background:none;color:rgba(242,233,220,.8);
+  font-family:inherit;font-size:12px;letter-spacing:.06em;border-radius:2px;
+  transition:.2s var(--ease);
+}
+.tool:hover{border-color:rgba(192,52,43,.6);color:#fff}
+.tool span{color:var(--gold);margin-left:4px}
+.toc-foot{margin-top:22px;font-size:10.5px;letter-spacing:.14em;color:var(--faint)}
+
+/* ---------- 灯箱 ---------- */
+.lb{
+  position:fixed;inset:0;z-index:80;display:none;place-items:center;
+  background:#060504;padding:0;
+}
+.lb.on{display:grid}
+.lb figure{margin:0;max-width:100%;max-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:54px 16px 40px}
+.lb img{max-width:100%;max-height:calc(100svh - 190px);object-fit:contain}
+.lb figcaption{margin:0;max-width:34rem;text-align:left;font-size:12px;line-height:1.75;color:rgba(242,233,220,.72);padding:0}
+.lb-close{
+  position:absolute;top:calc(12px + env(safe-area-inset-top));right:14px;
+  width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(0,0,0,.4);color:#fff;font-size:16px;cursor:pointer;line-height:1;
+}
+.lb-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(0,0,0,.4);color:#fff;font-size:16px;cursor:pointer;line-height:1;
+}
+.lb-prev{left:8px}.lb-next{right:8px}
+.lb-count{
+  position:absolute;bottom:calc(16px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--faint);
+}
+
+/* ---------- 动效 ---------- */
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+@media (min-width:900px){
+  .gnav{display:grid}
+  .card{flex:0 0 33.33%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1!important;transform:none!important}
+  .hero-media img{transform:none!important}
+  .scroll-hint em{animation:none}
+}
+@media print{
+  body{background:#fff;color:#111}
+  .progress,.chip,.fabs,.toc,.lb,.gnav,.gallery-hint,.dots,.scroll-hint{display:none!important}
+  .hero{min-height:auto;color:#111}
+  .hero::after{display:none}
+  .hero-media img{display:none}
+  p,figcaption,.stat,.bio dd,.tl .t,.factbox li{color:#222}
+  .stat,.factbox,.bio,.card img{border-color:#bbb}
+  .chapter,.end{page-break-inside:avoid}
+  .bleed img{max-height:none}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ============ 封面 ============ -->
+<header class="hero" id="top">
+  <div class="hero-media">
+    <img src="assets/img/mao-portrait.jpg" alt="展厅中的毛泽东画像" fetchpriority="high">
+  </div>
+  <div class="hero-inner">
+    <p class="kicker"><i></i>纪念中国工农红军长征胜利九十周年</p>
+    <h1>征途</h1>
+    <span class="en">THE LONG MARCH · 1934—1936</span>
+    <p class="lede">二万五千里，是一步一步走出来的。<span>九十年后，我们在一间展厅里，把那条路又走了一遍。</span></p>
+    <div class="hero-meta">
+      <span>1934.10 — 1936.10</span>
+      <span>主题文献展 · 七十余件</span>
+      <span>阅读约 <b>12</b> 分钟</span>
+    </div>
+    <div class="scroll-hint"><em>向下滑动</em><i></i></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 序 ============ -->
+<section class="tight" id="prologue" aria-label="序">
+  <div class="wrap">
+    <p class="dateline">石家庄 · 2026 年 10 月 30 日</p>
+
+    <p class="lede-drop">展厅在河北省图书馆的一层，进门右转，灯光比走廊暗一档。玻璃柜一列一列排过去，里面是纸——发黄的纸、卷了边的纸、被塑封压平的纸。纸上是很小的铅字，和更小的手写字。</p>
+
+    <p>这是「铁流·丰碑」——纪念中国工农红军长征胜利九十周年主题文献展，七十余件展品，大多是从民间收藏者手里借来的旧书、旧报、旧手稿。它们不是文物级别的东西，纸张薄，印量也不大，有几本连封面都磨掉了角。但把它们按时间摆成一条线，那条线就慢慢立了起来。</p>
+
+    <p>我们习惯用数字讲长征：二万五千里，三百六十八天，翻越十八座大山，跨过二十四条大河。数字当然是真的，可数字也是最容易被念过去的东西。真正让人停下来的，是柜子里那些很小的证据：一本 1960 年出版的回忆录，定价几角钱；一张 1975 年的报纸，头版登着毛泽东 1936 年在陕北的照片；一页英文书，标题是「穿过大草地」，纸张已经脆得像饼干。</p>
+
+    <p>这篇报道想做的事很简单：沿着这间展厅的次序，把这七十余件纸片重新排成一条路，看看九十年前的那支队伍，究竟是怎样从南方的稻田走到北方的黄土坡的；也想看看，那些后来把它们写下来、印出来、拍下来的人，为什么觉得这件事值得反复讲。</p>
+
+    <figure class="bleed">
+      <img src="assets/img/preface-panel.jpg" alt="「铁流·丰碑」展览前言展板">
+      <figcaption><span class="tag">展板</span>展览前言。四句话概括了这场远征被赋予的意义，下面的正文则回到了具体的时间：1934 年 10 月至 1936 年 10 月。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 01 出发 ============ -->
+<section class="chapter" id="ch1" data-ch="01">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">01</span>
+      <span class="en">DEPARTURE</span>
+      <h2>出发：于都河上的浮桥</h2>
+    </div>
+
+    <p class="reveal">1934 年 10 月 17 日夜里，江西于都河上架起了浮桥。木板铺在渔船上，天亮前拆掉，天黑后再架起来。连续几个晚上，八万六千余人从桥上走过，向西。</p>
+
+    <p class="reveal">队伍里带着的东西，今天听起来不太像一支要突围的军队：印钞机、X 光机、兵工设备、成箱的文件。这些东西后来大多丢在了路上。出发的名义是「战略转移」，没有人对队伍说要走多远，也没有人知道要走两年。</p>
+
+    <p class="reveal">留下来的人同样重要。一部分红军和游击队奉命留在南方八省，在之后的三年里失去了与中央的联系，在深山里面临清剿。他们的名字很少出现在长征的叙述里，但那条路的起点，是他们让出来的。</p>
+
+    <div class="factbox reveal">
+      <h4>出发时的数字</h4>
+      <ul>
+        <li><b>八万六千余人</b>：中央红军（红一方面军）出发时的大致兵力，另有相当数量的民工与挑夫随行。</li>
+        <li><b>三百六十八天</b>：从于都出发到陕北吴起镇，中央红军在路上的时间。</li>
+        <li><b>十余省</b>：队伍经过的省份数量，不同统计口径略有出入。</li>
+        <li><b>不到二十岁</b>：许多战士的年龄。队伍里有大量十几岁的「红小鬼」，也有缠过足的女红军。</li>
+      </ul>
+    </div>
+
+    <figure class="frame reveal">
+      <img src="assets/img/comic-red7.jpg" alt="《回忆红七军》封面，莫文骅著，1961 年">
+      <figcaption><span class="tag">展品</span>《回忆红七军》，莫文骅著，1961 年。红七军在广西左右江地区创建，1930 年北上，一部后来进入中央苏区，另一部在 1934 年西征中几乎全部损失。展签上的收藏者一栏写着同一个名字。</figcaption>
+    </figure>
+
+    <div class="pull reveal">
+      <p>「他们出发的时候，没有人告诉他们要走多远。」</p>
+      <span class="from">—— 展厅里的一位观众，在留言本上写下的话</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 转折 ============ -->
+<section class="chapter" id="ch2" data-ch="02">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">02</span>
+      <span class="en">THE TURNING</span>
+      <h2>转折：湘江之后，遵义之前</h2>
+    </div>
+
+    <p class="reveal">长征最初的两个月，是一场不断缩小的行军。1934 年 11 月底到 12 月初，中央红军在湘江两岸与国民党军激战，掩护中央机关渡江。这一仗之后，出发时的八万六千人只剩下三万余人。</p>
+
+    <p class="reveal">数字之外，是队伍里开始出现的疑问：这样走下去，要走到哪里去？湘江之后，通道、黎平、猴场，一连几个会议都在争论同一个问题——原定去湘西与红二、六军团会合的计划，还走得通吗？</p>
+
+    <p class="reveal">1935 年 1 月 15 日至 17 日，中共中央政治局在遵义召开扩大会议。会议集中批评了此前军事指挥上的错误，改组了中央领导机构，此后，毛泽东在党中央和红军的领导地位逐步确立。对一支正在被围追堵截的队伍来说，这次会议改变的不只是路线，还有「谁来指挥」。</p>
+
+    <figure class="frame reveal">
+      <img src="assets/img/comic-zunyi.jpg" alt="《从遵义到大渡河》封面，张爱萍著，1960 年">
+      <figcaption><span class="tag">展品</span>《从遵义到大渡河》，张爱萍著，1960 年。书名本身就是一段路程：从遵义出发，四渡赤水，巧渡金沙江，再到安顺场与泸定桥。作者是亲历者，后来成为开国上将。</figcaption>
+    </figure>
+
+    <figure class="bleed reveal">
+      <img src="assets/img/oil-meeting.jpg" alt="展厅中的革命历史题材油画">
+      <figcaption><span class="tag">展板</span>展厅中的一幅会议题材油画。这类创作大多产生于二十世纪五六十年代，用群像把一个会议室里的决定，变成后人可以看见的场景。</figcaption>
+    </figure>
+
+    <div class="factbox reveal">
+      <h4>遵义会议</h4>
+      <ul>
+        <li><b>时间</b>：1935 年 1 月 15 日至 17 日。</li>
+        <li><b>地点</b>：贵州遵义老城子尹路，原国民党黔军师长柏辉章的宅邸。</li>
+        <li><b>要点</b>：总结第五次反「围剿」失败和长征初期的教训，改组中央领导机构，取消「三人团」的最高军事指挥权。</li>
+        <li><b>意义</b>：这是中国共产党第一次独立自主地解决自己的路线、方针和政策问题。</li>
+      </ul>
+    </div>
+
+    <div class="pull reveal">
+      <p>「一个会议能改变什么？<br>它改变的是一支队伍接下来往哪儿走。」</p>
+      <span class="from">—— 展签旁的说明文字</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 雪山草地 ============ -->
+<section class="chapter" id="ch3" data-ch="03">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">03</span>
+      <span class="en">SNOW &amp; SWAMP</span>
+      <h2>雪山草地：最难的一段路</h2>
+    </div>
+
+    <p class="reveal">1935 年 6 月，中央红军翻越夹金山。海拔四千多米，山上空气稀薄，天气说变就变。出发前，队伍要求每人准备一根木棍、一些辣椒和生姜；过山时不能坐下，坐下就可能再也起不来。</p>
+
+    <p class="reveal">8 月，队伍进入松潘草地。那是一片看不到边的沼泽，草甸下面是黑水，踩偏一步就会陷下去。没有村庄，没有粮食，能吃的只有野菜、皮带和皮鞋。许多人是走着走着倒下去的，倒在草地上，连坟都留不下。</p>
+
+    <p class="reveal">长征的伤亡，相当一部分不是发生在战斗里，而是发生在这样的路上：饥饿、寒冷、疾病、掉队。后来统计这场远征时，人们常用「减员」这个中性的词，但减掉的每一个，都是一个具体的人。</p>
+
+    <figure class="bleed reveal">
+      <img src="assets/img/snow-book.jpg" alt="斯诺《红星照耀中国》英文本内页，第四章「穿过大草地」">
+      <figcaption><span class="tag">展品</span>埃德加·斯诺《红星照耀中国》1937 年英文本内页，第 168 页。这一章的标题是「Across the Great Grasslands」——穿过大草地。书页已经发黄，边角起了毛。</figcaption>
+    </figure>
+
+    <div class="factbox reveal">
+      <h4>那条路上的自然障碍</h4>
+      <ul>
+        <li><b>十八座大山</b>：其中五座终年积雪，夹金山是翻越的第一座。</li>
+        <li><b>二十四条大河</b>：包括乌江、赤水河、金沙江、大渡河，多数没有桥，靠木船、竹筏和浮桥。</li>
+        <li><b>草地</b>：松潘草地面积数万平方公里，海拔三千米以上，雨季积水，无路可循。</li>
+        <li><b>时间</b>：中央红军过草地约七天七夜，一些部队走了更久。</li>
+      </ul>
+    </div>
+
+    <div class="pull reveal">
+      <p>「在草地上，最难的不是走路，<br>是知道往哪儿走。」</p>
+      <span class="from">—— 一位老红军后来的回忆，转引自展陈说明</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 会师 ============ -->
+<section class="chapter" id="ch4" data-ch="04">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">04</span>
+      <span class="en">RENDEZVOUS</span>
+      <h2>会师：1936 年 10 月</h2>
+    </div>
+
+    <p class="reveal">1935 年 10 月 19 日，中央红军到达陕北吴起镇。队伍只剩下不足一万人，很多人穿着单衣，脚上是草鞋。陕北的冬天已经来了。</p>
+
+    <p class="reveal">一年之后，1936 年 10 月，红一、红二、红四方面军在甘肃会宁、静宁将台堡会师。三大主力会合，标志着长征结束。从于都河到会宁城，整整两年。</p>
+
+    <p class="reveal">把这几段路画在一张图上，会看到一个很不规则的形状：先向西，再向北，又折向东，再向西。那不是规划出来的路线，那是被围、被堵、被追之后，一次次改出来的路。</p>
+
+    <figure class="bleed reveal">
+      <img src="assets/img/longmarch-map.jpg" alt="中国工农红军长征图展板，1934 年 8 月至 1936 年 10 月">
+      <figcaption><span class="tag">展板</span>《中国工农红军长征图》，标注时间为 1934 年 8 月至 1936 年 10 月。红色与蓝色分别代表不同部队的行军路线，密集处是湘江、赤水、金沙江——那些反复争夺的地方。</figcaption>
+    </figure>
+
+    <ul class="tl reveal">
+      <li class="key"><span class="d">1934.10</span><span class="t">中央红军从江西于都出发，开始战略转移。</span></li>
+      <li><span class="d">1934.11—12</span><span class="t">湘江战役，中央红军由八万六千余人减至三万余人。</span></li>
+      <li class="key"><span class="d">1935.01</span><span class="t">遵义会议召开，改组中央领导机构。</span></li>
+      <li><span class="d">1935.01—03</span><span class="t">四渡赤水，在川黔滇边反复穿插。</span></li>
+      <li><span class="d">1935.05</span><span class="t">巧渡金沙江；强渡大渡河，飞夺泸定桥。</span></li>
+      <li><span class="d">1935.06</span><span class="t">翻越夹金山，与红四方面军在懋功会师。</span></li>
+      <li><span class="d">1935.08</span><span class="t">穿越松潘草地。</span></li>
+      <li class="key"><span class="d">1935.10</span><span class="t">到达陕北吴起镇，中央红军长征结束。</span></li>
+      <li class="key"><span class="d">1936.10</span><span class="t">红一、红二、红四方面军在会宁、将台堡会师。</span></li>
+    </ul>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="v txt">二万五千里</div><div class="k">中央红军长征行程<br>约合 12,500 公里</div></div>
+      <div class="stat"><div class="v" data-count="368">368</div><div class="k">从于都到吴起镇<br>中央红军在路上的天数</div></div>
+      <div class="stat"><div class="v" data-count="18">18</div><div class="k">翻越的大山<br>其中五座终年积雪</div></div>
+      <div class="stat"><div class="v" data-count="24">24</div><div class="k">跨过的大河<br>多数没有桥</div></div>
+    </div>
+    <p class="note-line">数字取自公开史料中的常见说法，不同统计口径略有出入，仅作量级参考。</p>
+  </div>
+</section>
+
+<!-- ============ 05 记录 ============ -->
+<section class="chapter" id="ch5" data-ch="05">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">05</span>
+      <span class="en">WITNESS</span>
+      <h2>记录：他们第一次被看见</h2>
+    </div>
+
+    <p class="reveal">1936 年 6 月，美国记者埃德加·斯诺进入陕北保安。他在那里住了四个月，采访了毛泽东、周恩来、彭德怀，也采访了普通战士，记下了大量笔记。10 月，他离开陕北，带走的东西里有几卷胶片。</p>
+
+    <p class="reveal">1937 年 1 月 25 日，美国《生活》（LIFE）杂志刊出这组照片，标题是「First Pictures of China's Roving Communists」——中国流动的共产党人的第一批照片。配文里写着：他的名字叫毛，悬赏二十五万美元要他的头。</p>
+
+    <p class="reveal">同年 10 月，《红星照耀中国》在伦敦出版。这是外界第一次系统地读到长征：一支被围追堵截的军队，如何穿过半个中国。这本书后来在多个国家被翻译、再版，也影响了很多年轻人——他们中的一些人，后来去了延安。</p>
+
+    <figure class="bleed reveal">
+      <img src="assets/img/life-1937.jpg" alt="1937 年 1 月 25 日《生活》杂志内页，毛泽东照片">
+      <figcaption><span class="tag">文献</span>《生活》1937 年 1 月 25 日，第 2 卷第 4 期，第 9 页。上方是毛泽东在陕北的照片，左侧小图为史沫特莱。标题下方的说明文字，用的还是当时西方媒体的口吻。</figcaption>
+    </figure>
+
+    <div class="pull reveal">
+      <p>“First Pictures of China's Roving Communists.”</p>
+      <span class="from">—— 《生活》杂志，1937 年 1 月 25 日</span>
+    </div>
+
+    <p class="reveal">记录者不止斯诺。艾格尼丝·史沫特莱、海伦·斯诺、艾泼斯坦，还有中国的记者、作家、画家，都在不同的时间写过这条路。他们写下的，不一定都是准确的，但正是这些彼此矛盾、彼此补充的文字，让九十年后的我们还能拼出一些细节。</p>
+  </div>
+</section>
+
+<!-- ============ 06 从会师到开国 ============ -->
+<section class="chapter" id="ch6" data-ch="06">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">06</span>
+      <span class="en">AFTER</span>
+      <h2>从会师到开国：十三年</h2>
+    </div>
+
+    <p class="reveal">会师之后的十三年，是另一段历史：抗战、延安、解放战争。1949 年 10 月 1 日，毛泽东在天安门城楼上宣读公告，中华人民共和国成立。从于都出发算起，整整十五年；从会宁会师算起，十三年。</p>
+
+    <p class="reveal">展厅里有一页旧书，印着那张开国大典的照片。照片下方的说明很朴素：几点、多少人、宣告了什么。它和展厅另一头的长征图之间，隔着几十米的走廊，也隔着十五年的路。</p>
+
+    <figure class="bleed reveal">
+      <img src="assets/img/founding-1949.jpg" alt="1949 年 10 月 1 日开国大典照片，印于旧书内页">
+      <figcaption><span class="tag">文献</span>旧书内页，第 19 页。图注写着：1949 年 10 月 1 日，北京 30 万军民集会天安门广场，隆重举行新中国开国大典。</figcaption>
+    </figure>
+
+    <figure class="frame reveal">
+      <img src="assets/img/renminribao-1975.jpg" alt="1975 年 10 月 19 日《人民日报》，纪念红军长征胜利四十周年">
+      <figcaption><span class="tag">文献</span>《人民日报》1975 年 10 月 19 日，纪念红军长征胜利四十周年。头版是毛泽东 1936 年在陕北的照片（斯诺摄），下方手书为《七律·长征》。</figcaption>
+    </figure>
+
+    <div class="pull reveal">
+      <p>红军不怕远征难，万水千山只等闲。</p>
+      <span class="from">—— 毛泽东《七律·长征》，1935 年 10 月</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 展品档案 ============ -->
+<section class="chapter" id="ch7" data-ch="07">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <span class="no">07</span>
+      <span class="en">ARCHIVE</span>
+      <h2>展品：柜子里的细节</h2>
+    </div>
+
+    <p class="reveal">展厅里最打动人的，往往不是那些总结性的句子，而是一些很小的东西：一本书的定价、一张报纸的日期、一页手稿上涂改的痕迹。下面这些，是我们从七十余件展品里挑出来的几件。</p>
+  </div>
+
+  <div class="gallery-wrap reveal">
+    <button class="gnav prev" id="galPrev" aria-label="上一张">‹</button>
+    <button class="gnav next" id="galNext" aria-label="下一张">›</button>
+    <div class="gallery" id="gallery">
+      <figure class="card">
+        <img src="assets/img/fangzhimin.jpg" alt="方志敏《可爱的中国》手稿与纪念文章">
+        <div class="cap"><b>《可爱的中国》手稿</b><span>方志敏 1935 年在狱中写下。上方是当年报纸的纪念文章《纪念方志敏烈士被捕一周年》，下方是手稿影印，纸上有红色的竖格。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/lidaozhao.jpg" alt="李大钊像展板">
+        <div class="cap"><b>李大钊像</b><span>展厅入口处的展板之一。李大钊 1927 年就义，他没有走长征，但这条路的起点，与那一代人的选择有关。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/comic-red7.jpg" alt="《回忆红七军》封面">
+        <div class="cap"><b>《回忆红七军》</b><span>莫文骅著，1961 年。展签上写着「铁流·丰碑」，年代、内容、收藏者各一栏，字是手写的。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/comic-zunyi.jpg" alt="《从遵义到大渡河》封面">
+        <div class="cap"><b>《从遵义到大渡河》</b><span>张爱萍著，1960 年。封面木刻是一支正在渡河的队伍，浪头比人高。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/snow-book.jpg" alt="《红星照耀中国》英文本内页">
+        <div class="cap"><b>《红星照耀中国》</b><span>1937 年英文本，第 168 页。「Across the Great Grasslands」，穿过大草地。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/life-1937.jpg" alt="《生活》杂志 1937 年 1 月 25 日">
+        <div class="cap"><b>《生活》杂志</b><span>1937 年 1 月 25 日。西方读者第一次在杂志上看见这支队伍的样子。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/renminribao-1975.jpg" alt="《人民日报》1975 年 10 月 19 日">
+        <div class="cap"><b>《人民日报》</b><span>1975 年 10 月 19 日，长征胜利四十周年。四十年后，纪念的方式是一张照片和一首手书的诗。</span></div>
+      </figure>
+      <figure class="card">
+        <img src="assets/img/oil-meeting.jpg" alt="会议题材油画">
+        <div class="cap"><b>会议题材油画</b><span>二十世纪五六十年代的创作。会议室里的灯、桌上的茶缸、墙上的地图，都是后来者的想象。</span></div>
+      </figure>
+    </div>
+    <div class="gallery-hint"><span>左右滑动 · 展品档案</span></div>
+    <div class="dots" id="galDots"></div>
+  </div>
+</section>
+
+<!-- ============ 结语 ============ -->
+<section class="end" id="end">
+  <div class="wrap">
+    <span class="glyph" aria-hidden="true">征</span>
+
+    <p class="reveal">出展厅的时候，天已经黑了。走廊里有人在低声讨论刚才看到的那页手稿，也有人在拍展板上的二维码。</p>
+
+    <p class="reveal">九十年前的那支队伍，平均年龄不到二十岁。他们中的大多数没有留下名字，也没有留下照片。他们走过的路，后来被画成图、写成书、拍成电影，被一代又一代人重新讲述。</p>
+
+    <p class="reveal">我们这一代人不用翻雪山、过草地，但每一代人都有自己的难关要过，也都要回答同一个问题：在看不见终点的时候，还走不走下去。</p>
+
+    <figure class="bleed reveal">
+      <img src="assets/img/epilogue-panel.jpg" alt="展览结语展板">
+      <figcaption><span class="tag">展板</span>展览的结语。最后一句是：「每一代人有每一代人的长征路，每一代人都要走好自己的长征路。」</figcaption>
+    </figure>
+
+    <span class="sign">END OF THE JOURNEY · 2026</span>
+  </div>
+</section>
+
+<!-- ============ 注释与来源 ============ -->
+<section class="tight" id="notes">
+  <div class="wrap">
+    <div class="notes">
+      <h3>注释</h3>
+      <ol>
+        <li>本文所引展品信息，均来自「铁流·丰碑」——纪念中国工农红军长征胜利九十周年主题文献展（河北省图书馆·燕赵红色记忆馆，2026 年 10 月）的展签与展板说明。</li>
+        <li>中央红军出发兵力、湘江战役后减员数字、行程与天数等，采用公开史料中的常见口径；不同版本统计略有出入，文中已标注为「大致」「约」。</li>
+        <li>遵义会议的时间、地点与主要内容，依据展陈说明与公开党史资料整理。</li>
+        <li>斯诺 1936 年在陕北的采访时间、离开时间，以及《红星照耀中国》1937 年 10 月在伦敦出版，依据公开出版史资料。</li>
+        <li>《生活》杂志 1937 年 1 月 25 日的期号、页码与标题，据展品实物照片识读。</li>
+        <li>文中引用的观众留言与老红军回忆，为展陈说明中的转引，非本文作者直接采访。</li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h3>参考与图片来源</h3>
+      <ul>
+        <li>展品实物照片：本文作者摄于「铁流·丰碑」主题文献展现场，2026 年 10 月 30 日。</li>
+        <li>《红星照耀中国》（Red Star Over China），埃德加·斯诺，1937 年。</li>
+        <li>《生活》（LIFE）杂志，1937 年 1 月 25 日，第 2 卷第 4 期。</li>
+        <li>《人民日报》，1975 年 10 月 19 日。</li>
+        <li>《从遵义到大渡河》，张爱萍，1960 年；《回忆红七军》，莫文骅，1961 年。</li>
+      </ul>
+      <div class="ai-badge"><b>AI 辅助创作</b>本页版式、部分文字组织与视觉处理由 AI 辅助完成；史实、引文与图片说明均经人工核对展品与公开资料，未使用 AI 生成或伪造历史照片。</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="fgrid">
+    <div><b>征途 · 二万五千里</b><br>纪念中国工农红军长征胜利九十周年</div>
+    <div style="text-align:right">新闻传播综合实训 · 主题报道专题<br>2026 年 10 月</div>
+  </div>
+</footer>
+
+<!-- ============ 悬浮控件 ============ -->
+<div class="chip" id="chip"><span id="chipNo">01</span><span>/</span><span id="chipTotal">07</span></div>
+
+<div class="fabs">
+  <button class="fab" id="btnToc" aria-label="目录与设置" title="目录">
+    <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
+</div>
+
+<!-- ============ 目录 ============ -->
+<div class="toc" id="toc" aria-hidden="true">
+  <div class="toc-panel">
+    <div class="toc-head"><span>目录</span><button class="toc-close" id="tocClose" aria-label="关闭">✕</button></div>
+    <ul class="toc-list" id="tocList"></ul>
+<div class="toc-tools">
+      <button class="tool" id="btnFont">字号 <span id="fsLabel">标准</span></button>
+      <button class="tool" id="btnTop">回到顶部 ↑</button>
+    </div>
+    <div class="toc-foot">征途 · THE LONG MARCH<br>1934 — 1936</div>
+  </div>
+</div>
+
+<!-- ============ 灯箱 ============ -->
+<div class="lb" id="lb" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="关闭">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="上一张">‹</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="下一张">›</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+<script>
+(function () {
+  "use strict";
+  var doc = document;
+  var root = doc.documentElement;
+  root.classList.add("js");
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var $ = function (s, c) { return (c || doc).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || doc).querySelectorAll(s)); };
+  var store = {
+    get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+
+  /* ---------- 进度条 ---------- */
+  var bar = $("#progress");
+  function onScrollBar() {
+    var h = root.scrollHeight - window.innerHeight;
+    var p = h > 0 ? window.scrollY / h : 0;
+    if (bar) bar.style.width = Math.min(100, Math.max(0, p * 100)).toFixed(2) + "%";
+  }
+
+  /* ---------- 入场动画 ---------- */
+  var reveals = $$(".reveal");
+  if (!("IntersectionObserver" in window) || reduce) {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.06 });
+    reveals.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = $$("[data-count]").filter(function (el) {
+    return /^\s*[\d,]+\s*$/.test(el.textContent);
+  });
+  function runCount(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+    if (reduce) { el.textContent = target.toLocaleString("en-US"); return; }
+    var start = null, dur = 1200;
+    function step(ts) {
+      if (!start) start = ts;
+      var k = Math.min(1, (ts - start) / dur);
+      var e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(target * e).toLocaleString("en-US");
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ("IntersectionObserver" in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { runCount(en.target); cio.unobserve(en.target); }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function (el) { cio.observe(el); });
+  }
+
+  /* ---------- 封面视差 ---------- */
+  var heroImg = $(".hero-media img");
+  if (heroImg && !reduce && window.matchMedia("(min-width: 700px)").matches) {
+    var raf = false;
+    var parallax = function () {
+      if (raf) return;
+      raf = true;
+      requestAnimationFrame(function () {
+        var y = Math.min(window.scrollY, window.innerHeight);
+        heroImg.style.transform = "translate3d(0," + (y * 0.16).toFixed(1) + "px,0) scale(1.02)";
+        raf = false;
+      });
+    };
+    window.addEventListener("scroll", parallax, { passive: true });
+    parallax();
+  }
+
+  /* ---------- 章节胶囊 ---------- */
+  var chapters = $$("section[data-ch]");
+  var chip = $("#chip"), chipNo = $("#chipNo");
+  var chipTimer = null, lastCh = "";
+  function onChip() {
+    var cur = "";
+    for (var i = 0; i < chapters.length; i++) {
+      var s = chapters[i];
+      if (s.getBoundingClientRect().top <= window.innerHeight * 0.42) cur = s.getAttribute("data-ch");
+    }
+    if (!cur) return;
+    if (cur !== lastCh) {
+      lastCh = cur;
+      if (chipNo) chipNo.textContent = cur;
+      if (chip) {
+        chip.classList.add("on");
+        clearTimeout(chipTimer);
+        chipTimer = setTimeout(function () { chip.classList.remove("on"); }, 2600);
+      }
+    }
+  }
+
+  /* ---------- 目录 ---------- */
+  var toc = $("#toc"), tocList = $("#tocList");
+  var tocItems = [];
+  function buildToc() {
+    if (!tocList) return;
+    var list = [];
+    var pro = $("#prologue"), end = $("#end");
+    if (pro) list.push({ el: pro, n: "序", t: "从一间展厅开始", e: "PROLOGUE" });
+    chapters.forEach(function (s) {
+      var h = $(".ch-head h2", s), en = $(".ch-head .en", s);
+      list.push({
+        el: s, n: s.getAttribute("data-ch"), t: h ? h.textContent : "",
+        e: en ? en.textContent.replace(/\s+/g, " ").trim() : ""
+      });
+    });
+    if (end) list.push({ el: end, n: "终", t: "走出展厅之后", e: "END OF THE JOURNEY" });
+
+    list.forEach(function (it) {
+      var li = doc.createElement("li");
+      var btn = doc.createElement("button");
+      btn.innerHTML = '<span class="row"><span class="n">' + it.n + '</span><span>' + it.t + '</span></span><span class="e">' + it.e + "</span>";
+      btn.addEventListener("click", function () {
+        closeToc();
+        var top = it.el.getBoundingClientRect().top + window.scrollY - 6;
+        window.scrollTo({ top: top, behavior: reduce ? "auto" : "smooth" });
+      });
+      li.appendChild(btn);
+      tocList.appendChild(li);
+      tocItems.push({ li: li, el: it.el });
+    });
+
+    var total = $("#chipTotal");
+    if (total) total.textContent = ("0" + chapters.length).slice(-2);
+  }
+
+  function markToc() {
+    if (!tocItems.length) return;
+    var cur = tocItems[0];
+    tocItems.forEach(function (it) {
+      if (it.el.getBoundingClientRect().top <= window.innerHeight * 0.4) cur = it;
+    });
+    tocItems.forEach(function (it) { it.li.classList.toggle("cur", it === cur); });
+  }
+
+  function openToc() {
+    if (!toc) return;
+    toc.classList.add("on");
+    toc.setAttribute("aria-hidden", "false");
+    markToc();
+  }
+  function closeToc() {
+    if (!toc) return;
+    toc.classList.remove("on");
+    toc.setAttribute("aria-hidden", "true");
+  }
+
+  /* ---------- 字号 ---------- */
+  var FS = [16, 18, 20], FKEY = "longmarch-fs";
+  var fsIdx = Math.max(0, FS.indexOf(parseInt(store.get(FKEY) || "16", 10)));
+  var FSLABEL = ["标准", "大", "特大"];
+  function applyFs() {
+    root.style.setProperty("--fs-body", FS[fsIdx] + "px");
+    store.set(FKEY, String(FS[fsIdx]));
+    var lab = $("#fsLabel");
+    if (lab) lab.textContent = FSLABEL[fsIdx];
+  }
+  applyFs();
+
+  /* ---------- 灯箱 ---------- */
+  var lb = $("#lb"), lbImg = $("#lbImg"), lbCap = $("#lbCap"), lbCount = $("#lbCount");
+  var shots = $$("figure img").map(function (img) {
+    var fig = img.closest("figure");
+    var cap = fig ? fig.querySelector("figcaption") : null;
+    return { src: img.currentSrc || img.src, alt: img.alt || "", cap: cap ? cap.textContent.trim() : "" };
+  }).filter(function (s) { return s.src && s.src.indexOf("data:") !== 0 || true; });
+  var lbAt = -1;
+
+  function openLb(i) {
+    if (!lb || !shots.length) return;
+    lbAt = (i + shots.length) % shots.length;
+    var s = shots[lbAt];
+    lbImg.src = s.src;
+    lbImg.alt = s.alt;
+    if (lbCap) lbCap.textContent = s.cap;
+    if (lbCount) lbCount.textContent = (lbAt + 1) + " / " + shots.length;
+    lb.classList.add("on");
+    lb.setAttribute("aria-hidden", "false");
+    doc.body.style.overflow = "hidden";
+  }
+  function closeLb() {
+    if (!lb) return;
+    lb.classList.remove("on");
+    lb.setAttribute("aria-hidden", "true");
+    doc.body.style.overflow = "";
+    lbAt = -1;
+  }
+  $$("figure img").forEach(function (img) {
+    var i = shots.findIndex(function (s) { return s.src === (img.currentSrc || img.src); });
+    img.addEventListener("click", function () { openLb(i < 0 ? 0 : i); });
+    img.style.cursor = "zoom-in";
+  });
+
+  /* ---------- 横滑档案 ---------- */
+  var gal = $("#gallery"), dots = $("#galDots");
+  var gPrev = $("#galPrev"), gNext = $("#galNext");
+  var cards = gal ? $$(".card", gal) : [];
+  if (dots) {
+    cards.forEach(function (c, i) {
+      var d = doc.createElement("i");
+      if (i === 0) d.className = "on";
+      dots.appendChild(d);
+    });
+  }
+  function galState() {
+    if (!gal) return;
+    var max = gal.scrollWidth - gal.clientWidth;
+    var idx = Math.round(gal.scrollLeft / Math.max(1, (cards[0] ? cards[0].offsetWidth + 14 : 280)));
+    if (dots) {
+      $$("i", dots).forEach(function (d, i) { d.classList.toggle("on", i === Math.min(idx, cards.length - 1)); });
+    }
+    if (gPrev) gPrev.disabled = gal.scrollLeft <= 2;
+    if (gNext) gNext.disabled = gal.scrollLeft >= max - 2;
+  }
+  function galStep(dir) {
+    if (!gal) return;
+    var step = cards[0] ? cards[0].offsetWidth + 14 : 280;
+    gal.scrollBy({ left: dir * step, behavior: reduce ? "auto" : "smooth" });
+  }
+
+  /* ---------- 事件绑定 ---------- */
+  var btnToc = $("#btnToc"), btnFont = $("#btnFont"), btnTop = $("#btnTop");
+  if (btnToc) btnToc.addEventListener("click", openToc);
+  var tc = $("#tocClose");
+  if (tc) tc.addEventListener("click", closeToc);
+  if (toc) toc.addEventListener("click", function (e) { if (e.target === toc) closeToc(); });
+  if (btnFont) btnFont.addEventListener("click", function () {
+    fsIdx = (fsIdx + 1) % FS.length;
+    applyFs();
+    btnFont.animate ? btnFont.animate([{ transform: "scale(.88)" }, { transform: "scale(1)" }], { duration: 220 }) : 0;
+  });
+  if (btnTop) btnTop.addEventListener("click", function () {
+    closeToc();
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  });
+  if (gPrev) gPrev.addEventListener("click", function () { galStep(-1); });
+  if (gNext) gNext.addEventListener("click", function () { galStep(1); });
+  if (gal) gal.addEventListener("scroll", galState, { passive: true });
+  var lbc = $("#lbClose"), lbp = $("#lbPrev"), lbn = $("#lbNext");
+  if (lbc) lbc.addEventListener("click", closeLb);
+  if (lbp) lbp.addEventListener("click", function (e) { e.stopPropagation(); openLb(lbAt - 1); });
+  if (lbn) lbn.addEventListener("click", function (e) { e.stopPropagation(); openLb(lbAt + 1); });
+  if (lb) lb.addEventListener("click", function (e) {
+    if (e.target === lb || e.target.tagName === "FIGURE") closeLb();
+  });
+  doc.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") { closeLb(); closeToc(); }
+    if (lb && lb.classList.contains("on")) {
+      if (e.key === "ArrowLeft") openLb(lbAt - 1);
+      if (e.key === "ArrowRight") openLb(lbAt + 1);
+    }
+  });
+
+  /* ---------- 悬浮键在封面隐藏 ---------- */
+  var fabs = doc.querySelector(".fabs");
+  var heroEl = doc.querySelector(".hero");
+  function onFabs() {
+    if (!fabs) return;
+    var lim = heroEl ? heroEl.offsetHeight * 0.72 : 420;
+    fabs.classList.toggle("hide", window.scrollY < lim);
+  }
+
+  /* ---------- 滚动驱动 ---------- */
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      onScrollBar();
+      onChip();
+      markToc();
+      onFabs();
+      ticking = false;
+    });
+  }, { passive: true });
+
+  /* ---------- 初始化 ---------- */
+  buildToc();
+  onScrollBar();
+  onChip();
+  onFabs();
+  galState();
+  markToc();
+  window.addEventListener("resize", function () { onScrollBar(); galState(); });
+
+  /* 图片兜底：加载失败时给出提示 */
+  $$("img").forEach(function (img) {
+    img.addEventListener("error", function () {
+      img.style.background = "#1a1615";
+      img.setAttribute("data-failed", "1");
+      var fig = img.closest("figure");
+      if (fig && !fig.querySelector(".img-err")) {
+        var p = doc.createElement("p");
+        p.className = "img-err";
+        p.textContent = "图片未能加载，请确认 assets 文件夹与 index.html 在同一目录。";
+        p.style.cssText = "font-size:12px;color:#c0342b;margin:8px 0 0";
+        fig.appendChild(p);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
